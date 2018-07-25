@@ -1,0 +1,10 @@
+<p>
+  my-home-component works!
+</p>
+
+
+<ul>
+  <li *ngFor="let movie of movies.getMovies()">
+   <a [routerLink]="['/movie',movie.id]">{{movie.title}}</a>
+  </li>
+</ul>
